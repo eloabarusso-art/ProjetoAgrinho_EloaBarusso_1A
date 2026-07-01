@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoEnergia | Energia Sustentável</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="container">
+
+        <div class="logo">
+            🌿 <span>EcoEnergia</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+
+        </nav>
+
+    </div>
+
+ <button id="topo" onclick="voltarTopo()">
+    ↑
+</button>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container hero-container">
+
+        <div class="texto">
+
+            <span class="destaque">
+                Energia Renovável
+            </span>
+
+            <h1>
+                Transformando a energia do sol e do vento em economia para o seu futuro.
+            </h1>
+
+            <p>
+
+                A EcoEnergia oferece soluções completas em energia solar e eólica,
+                ajudando residências, empresas e propriedades rurais a economizar
+                energia e preservar o meio ambiente.
+
+            </p>
+
+            <a href="produtos.html" class="botao">
+                Conheça nossos produtos
+            </a>
+
+        </div>
+
+        <div class="imagem">
+
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80"
+                alt="Painéis solares">
+
+        </div>
+
+    </div>
+
+</section>
+<!-- NÚMEROS -->
+<section class="numeros">
+
+    <div class="container numeros-grid">
+
+        <div class="numero-box">
+            <h2 class="contador" data-target="+1500">0</h2>
+            <p>Clientes satisfeitos</p>
+        </div>
+
+        <div class="numero-box">
+            <h2 class="contador" data-target="+8000">0</h2>
+            <p>Painéis instalados</p>
+        </div>
+
+        <div class="numero-box">
+            <h2 class="contador" data-target="98%">0</h2>
+            <p>Satisfação</p>
+        </div>
+
+        <div class="numero-box">
+            <h2 class="contador" data-target="100%">0</h2>
+            <p>Energia limpa</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="solucoes">
+
+    <div class="container">
+
+        <div class="titulo">
+
+            <span>Nossas Soluções</span>
+
+            <h2>Soluções inteligentes para gerar energia limpa</h2>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icone">☀</div>
+
+                <h3>Painéis Solares</h3>
+
+                <p>
+                    Alta eficiência para residências, empresas e propriedades rurais.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icone">🌬</div>
+
+                <h3>Energia Eólica</h3>
+
+                <p>
+                    Turbinas modernas que aproveitam a força do vento.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icone">🔋</div>
+
+                <h3>Baterias</h3>
+
+                <p>
+                    Armazene energia para utilizar quando precisar.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icone">⚡</div>
+
+                <h3>Inversores</h3>
+
+                <p>
+                    Máximo desempenho e segurança para seu sistema.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="diferenciais">
+
+    <div class="container">
+
+        <div class="titulo">
+
+            <span>Por que escolher a EcoEnergia?</span>
+
+            <h2>Compromisso com qualidade e sustentabilidade</h2>
+
+        </div>
+
+        <div class="cards-diferenciais">
+
+            <div class="diferencial">
+
+                <h3>🌱 Sustentabilidade</h3>
+
+                <p>
+                    Trabalhamos com soluções que reduzem os impactos ambientais e incentivam o uso de energias renováveis.
+                </p>
+
+            </div>
+
+            <div class="diferencial">
+
+                <h3>💰 Economia</h3>
+
+                <p>
+                    Reduza significativamente os custos com energia elétrica utilizando tecnologias limpas.
+                </p>
+
+            </div>
+
+            <div class="diferencial">
+
+                <h3>🏆 Qualidade</h3>
+
+                <p>
+                    Equipamentos modernos, certificados e de alta durabilidade.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+<button id="btnAcessibilidade" onclick="abrirPainel()">
+    ♿
+    <span class="pulse"></span>
+</button>
+
+<div id="painelAcessibilidade" class="overlay">
+
+    <div class="modal">
+
+        <div class="modal-header">
+            <div>
+                <h2>♿ Acessibilidade</h2>
+                <p>Personalize sua experiência</p>
+            </div>
+
+            <button onclick="fecharPainel()">✕</button>
+        </div>
+
+        <div class="modal-body">
+
+            <div class="card">
+                <h3>Texto</h3>
+                <button onclick="aumentarFonte()">Aumentar</button>
+                <button onclick="diminuirFonte()">Diminuir</button>
+            </div>
+
+            <div class="card">
+                <h3>Visual</h3>
+              <button id="btnModo">Modo Escuro</button>
+                <button onclick="altoContraste()">Alto contraste</button>
+            </div>
+
+            <div class="card">
+                <h3>Sistema</h3>
+                <button onclick="resetar()">Restaurar padrão</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<section class="como-funciona">
+
+    <div class="container">
+
+        <div class="titulo">
+            <span>Como funciona</span>
+            <h2>Simples, rápido e sustentável</h2>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📥 Solicite</h3>
+                <p>Entre em contato e faça uma avaliação gratuita do seu consumo.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔧 Instalamos</h3>
+                <p>Nossa equipe instala todo o sistema de energia solar ou eólica.</p>
+            </div>
+
+            <div class="card">
+                <h3>💰 Economize</h3>
+                <p>Comece a reduzir sua conta de energia imediatamente.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="depoimentos">
+
+    <div class="container">
+
+        <div class="titulo">
+            <span>Depoimentos</span>
+            <h2>O que nossos clientes dizem</h2>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <p>"Reduzi minha conta de luz pela metade em 2 meses!"</p>
+                <strong>— João Silva</strong>
+            </div>
+
+            <div class="card">
+                <p>"Instalação rápida e equipe muito profissional."</p>
+                <strong>— Maria Souza</strong>
+            </div>
+
+            <div class="card">
+                <p>"Investimento que já se pagou em menos de 1 ano."</p>
+                <strong>— Carlos Lima</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="container">
+
+        <p class="copyright">
+            © 2026 EcoEnergia • Todos os direitos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+<div id="particles"></div>
+
+</html>

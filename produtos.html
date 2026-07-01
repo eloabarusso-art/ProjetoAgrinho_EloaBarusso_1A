@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produtos | EcoEnergia</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container">
+
+        <div class="logo">
+            <h1>EcoEnergia</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+
+    </div>
+</header>
+
+<section class="pagina">
+
+    <div class="container">
+
+        <div class="titulo">
+
+            <span>Nossos Produtos</span>
+
+            <h2>Energia Inteligente para Todos</h2>
+
+            <p>
+                Escolha equipamentos modernos para produzir energia limpa,
+                economizar na conta de luz e contribuir para um futuro sustentável.
+            </p>
+
+        </div>
+
+        <div class="cards-produtos">
+
+            <div class="produto">
+
+                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=700&q=80">
+
+                <div class="info">
+
+                    <h3>Painel Solar 550W</h3>
+
+                    <p>
+                        Alta eficiência para residências, empresas e propriedades rurais.
+                    </p>
+
+                    <span class="preco">
+                        R$ 1.299,90
+                    </span>
+
+                    <a href="contato.html" class="btn-comprar">
+                        Solicitar orçamento
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="produto">
+
+                <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=700&q=80">
+
+                <div class="info">
+
+                    <h3>Turbina Eólica</h3>
+
+                    <p>
+                        Produza energia utilizando a força dos ventos.
+                    </p>
+
+                    <span class="preco">
+                        R$ 8.990,00
+                    </span>
+
+                    <a href="contato.html" class="btn-comprar">
+                        Solicitar orçamento
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="produto">
+
+                <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=700&q=80">
+
+                <div class="info">
+
+                    <h3>Bateria Solar</h3>
+
+                    <p>
+                        Armazene energia para utilizar quando precisar.
+                    </p>
+
+                    <span class="preco">
+                        R$ 2.499,90
+                    </span>
+
+                    <a href="contato.html" class="btn-comprar">
+                        Solicitar orçamento
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="produto">
+
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80">
+
+                <div class="info">
+
+                    <h3>Inversor Solar</h3>
+
+                    <p>
+                        Converte a energia gerada pelos painéis com máxima eficiência.
+                    </p>
+
+                    <span class="preco">
+                        R$ 3.199,90
+                    </span>
+
+                    <a href="contato.html" class="btn-comprar">
+                        Solicitar orçamento
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="container">
+
+        <p>© 2026 EcoEnergia - Energia limpa para um futuro sustentável.</p>
+
+    </div>
+
+</footer>
+
+<!-- BOTÃO ACESSIBILIDADE -->
+<button id="btnAcessibilidade" onclick="abrirPainel()">♿</button>
+
+<!-- PAINEL -->
+<div id="painelAcessibilidade" class="overlay">
+
+    <div class="modal">
+
+        <div class="modal-header">
+            <div>
+                <h2>Acessibilidade</h2>
+                <p>Personalize sua experiência</p>
+            </div>
+
+            <button onclick="fecharPainel()">✕</button>
+        </div>
+
+        <div class="modal-body">
+
+            <div class="card">
+                <h3>Texto</h3>
+                <button onclick="aumentarFonte()">Aumentar</button>
+                <button onclick="diminuirFonte()">Diminuir</button>
+            </div>
+
+            <div class="card">
+                <h3>Visual</h3>
+                <button onclick="modoEscuro()">Modo escuro</button>
+                <button onclick="modoClaro()">Modo claro</button>
+                <button onclick="altoContraste()">Alto contraste</button>
+            </div>
+
+            <div class="card">
+                <h3>Sistema</h3>
+                <button onclick="resetar()">Restaurar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

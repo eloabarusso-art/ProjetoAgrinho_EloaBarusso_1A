@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato | EcoEnergia</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+
+    <div class="container">
+
+        <div class="logo">
+            🌿 <span>EcoEnergia</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<section class="contato">
+
+    <div class="container">
+
+        <div class="titulo">
+
+            <span>Fale Conosco</span>
+
+            <h2>Estamos prontos para atender você</h2>
+
+            <p>
+                Entre em contato para tirar dúvidas sobre nossos produtos ou solicitar um orçamento.
+            </p>
+
+        </div>
+
+        <div class="contato-grid">
+
+            <div class="informacoes">
+
+                <h3>Informações</h3>
+
+                <div class="item-info">
+                    <strong>📍 Endereço</strong>
+                    <p>Paraná - Brasil</p>
+                </div>
+
+                <div class="item-info">
+                    <strong>📞 Telefone</strong>
+                    <p>(43) 98760-3880</p>
+                </div>
+
+                <div class="item-info">
+                    <strong>✉ E-mail</strong>
+                    <p>contato@ecoenergia.com</p>
+                </div>
+
+                <div class="item-info">
+                    <strong>🕒 Horário</strong>
+                    <p>Segunda a Sexta • 08h às 18h</p>
+                </div>
+
+            </div>
+
+
+            <form class="formulario" onsubmit="enviarFormulario(event)">
+
+    <input id="nome" type="text" placeholder="Nome completo">
+
+    <input id="email" type="email" placeholder="E-mail">
+
+    <input id="telefone" type="tel" placeholder="Telefone">
+
+    <textarea id="mensagem" rows="6" placeholder="Digite sua mensagem..."></textarea>
+
+    <button type="submit">
+        Enviar mensagem
+    </button>
+
+</form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="container">
+
+        <p class="copyright">
+            © 2026 EcoEnergia • Todos os direitos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+<!-- MENSAGEM DE SUCESSO -->
+
+<div id="popupSucesso" class="popup">
+
+    <div class="popup-conteudo">
+
+        <div class="check">✔</div>
+
+        <h2>Mensagem enviada!</h2>
+
+        <p>
+            Obrigado pelo contato.<br>
+            Nossa equipe responderá o mais breve possível.
+        </p>
+
+        <button onclick="fecharPopup()">
+            Fechar
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+<!-- BOTÃO ACESSIBILIDADE -->
+<button id="btnAcessibilidade" onclick="abrirPainel()">♿</button>
+
+<!-- PAINEL -->
+<div id="painelAcessibilidade" class="overlay">
+
+    <div class="modal">
+
+        <div class="modal-header">
+            <div>
+                <h2>Acessibilidade</h2>
+                <p>Personalize sua experiência</p>
+            </div>
+
+            <button onclick="fecharPainel()">✕</button>
+        </div>
+
+        <div class="modal-body">
+
+            <div class="card">
+                <h3>Texto</h3>
+                <button onclick="aumentarFonte()">Aumentar</button>
+                <button onclick="diminuirFonte()">Diminuir</button>
+            </div>
+
+            <div class="card">
+                <h3>Visual</h3>
+                <button onclick="modoEscuro()">Modo escuro</button>
+                <button onclick="modoClaro()">Modo claro</button>
+                <button onclick="altoContraste()">Alto contraste</button>
+            </div>
+
+            <div class="card">
+                <h3>Sistema</h3>
+                <button onclick="resetar()">Restaurar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
